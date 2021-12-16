@@ -1007,7 +1007,7 @@ An example using the singularity client might look as follows:
 $ singularity pull --library http://127.0.0.1 collection/container:tag
 ```
 
-#### GET /v1/images/<username>/<collection>/<image>:<tag>?arch=<arch>
+#### GET `/v1/images/<username>/<collection>/<image>:<tag>?arch=<arch>`
 
 The get image view takes unique resource identifier information for a container along with an architecture,
 and determines if the registry has it. 
@@ -1026,7 +1026,7 @@ or if the architecture requested does not match the one that the container has.
 Given that the container is found, this view returns the same 200 success response as the similar
 view pinged to upload a container defined [here](#get-image-view).
 
-#### GET /v1/imagefile/<username>/<collection>/<image>:<tag>?arch=<arch>
+#### GET `/v1/imagefile/<username>/<collection>/<image>:<tag>?arch=<arch>`
 
 This endpoint is pinged to request the actual download URL for the image.
 The registry is again expected to parse the container unique resource identifier,
