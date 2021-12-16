@@ -10,4 +10,4 @@ and now is present in the following container registry implementations:
 The specification here is a community effort to document and maintain this application
 programming interface.
 
-⭐️ [Read the Documentation](https://singularityhub.github.io/library-api/) or [Jump to the specification](https://singularityhub.github.io/library-api/spec) ⭐️
+⭐️ [Read the Documentation](https://singularityhub.github.io/library-api/) or [Jump to the current specification](https://singularityhub.github.io/library-api/#/spec/main) ⭐️
