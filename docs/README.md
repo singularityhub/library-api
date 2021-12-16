@@ -47,3 +47,12 @@ the primary clients are the two versions of the original Singularity software:
 If you know of other implementations of registries or clients (the writer of this documentation
 seems to recall some that she cannot remember) please [let us know](https://github.com/singularityhub/library-api/issues)
 or [open a pull request](https://github.com/singularityhub/library-api) to add it.
+
+## Community standard
+
+Since this is a community standard, anyone in the community is invited to participate!
+Suggestions for improvements are welcome through
+[github issues](https://github.com/singularityhub/library-api/issues)
+or [pull requests](https://github.com/singularityhub/library-api/pulls).
+Changes to the specification will be reviewed and approved by people from the community
+as described in the [community charter](community_charter.md).
