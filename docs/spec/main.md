@@ -420,7 +420,7 @@ other functionality not covered in this API.
 
 **200 Response**
 
-<a id="collection-response">
+<a id="collection-response"></a>
 
 Successful creation of a new collection should result in a 200 response with the following metadata:
 
@@ -568,7 +568,7 @@ choices, the response is the same.
 
 #### GET /v1/images/<username>/<collection>/<image>:<sha256>?arch=<arch>
 
-<a id="get-image-view">
+<a id="get-image-view"></a>
 
 This is the pushed named container view, and this is the first time the client provides the full container unique resource identifier
 (`<username>/<collection>/<image>:<digest>?arch=<arch>` as url parameters.
