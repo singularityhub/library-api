@@ -266,7 +266,7 @@ better, but clients can still choose to support it.
 
 #### Push API Endpoints
 
-##### GET /v1/entities/<username>
+##### GET /v1/entities/username
 
 The purpose of this view is to look up metadata associated with an entity, which is often a user account (e.g., vsoch in the examples
 previously) but does not necessarily have to be. The get request should provide the query parameter for the entity name (or `<username>`)
@@ -325,7 +325,7 @@ The named entity was not found in the registry, and the interaction stops. This 
  - the user found was not linked with the token provided
  
 
-##### GET /v1/collections/<username>/<collection>
+##### GET /v1/collections/username/collection
 
 This is the basic endpoint to determine if a collection exists.
 
@@ -464,7 +464,7 @@ Successful creation of a new collection should result in a 200 response with the
 | updatedAt | timestmap | The datetime when the collection was updated |
 | updatedBy | string | the user identifier that updated the collection |
 
-#### GET /v1/containers/<username>/<collection>/<image>
+#### GET /v1/containers/username/collection/image
 
 This is a named collection container view, where generally the client is asking to return metadata for a specific container.
 Token validation is recommended, as per the other endpoints. This request should provide the following parameters
@@ -566,7 +566,7 @@ are ensuring that the user has permission to write to the collection. In practic
 are different operations that go on the back end of each registry server, but regardless of these individual
 choices, the response is the same.
 
-#### GET /v1/images/<username>/<collection>/<image>:<sha256>?arch=<arch>
+#### GET /v1/images/username/collection/image:sha256?arch=arch
 
 <a id="get-image-view"></a>
 
@@ -662,7 +662,7 @@ the final allocated tag after upload. The format of this temporary tag can then 
 partially pushed (or failed) images with some kind of scheduled job, if desired. This again is not part of the
 library API specification, but a note added for clarity to be helpful to developers.
 
-#### POST /v2/imagefile/<upload_id>/_multipart
+#### POST /v2/imagefile/upload_id/_multipart
 
 This is an endpoint that gives a registry power to say "Yes, I support multipart uploads" or "No, I do not."
 This functionality was added to the Singularity scs client in February of 2020. In a request that is doing multipart,
@@ -744,7 +744,7 @@ need to tell the calling client about it, specifically the uploadID to use and t
 }
 ```
 
-#### PUT /v2/imagefile/<uploadid>/_multipart
+#### PUT /v2/imagefile/uploadid/_multipart
 
 After a multipart upload is initiated with `POST /v2/imagefile/<upload_id>/_multipart`,
 this endpoint is queried with metadata in the body, including:
@@ -865,7 +865,7 @@ is data with an `uploadURL`, which might look like this:
 
 The client would then upload the container to this URL, and hit the `_complete` view upon completion.
 
-#### PUT /v2/imagefile/<imageid>/_complete
+#### PUT /v2/imagefile/imageid/_complete
 
 This is a callback to the server to indicate that the upload is complete, and it provides the "parts" for the upload
 associated with the container. The client provides
@@ -914,7 +914,7 @@ A successful response here is just the status code with empty data, e.g.,:
 Response(status=200, data={})
 ```
 
-#### PUT /v2/imagefile/<upload_id>/_multipart_abort
+#### PUT /v2/imagefile/upload_id/_multipart_abort
 
 This request can be issued at any time to abort the upload of the container. It is up to the registry to decide
 on the clean up action, but generally the recommended approach is to delete partial uploads associated with the upload id and
@@ -933,7 +933,7 @@ The container does not exist.
 The abort operation was successful.
 
 
-#### GET /v1/tags/<collection_id>
+#### GET /v1/tags/collection_id
 
 Get a list of tags associated with an image. This is typically called after upload to get a list of known tags.
 
@@ -953,7 +953,7 @@ A list of tags and associated container ids are returned for the collection.
 {"data": {'latest': '13'}}
 ```
 
-#### POST /v1/tags/<imageid>
+#### POST /v1/tags/imageid
 
 Update a list of tags for an image. This is typically called as the last step for an image push. It's the final
 step to tag a newly uploaded image. The body is required to have the following data:
@@ -1007,7 +1007,7 @@ An example using the singularity client might look as follows:
 $ singularity pull --library http://127.0.0.1 collection/container:tag
 ```
 
-#### GET `/v1/images/<username>/<collection>/<image>:<tag>?arch=<arch>`
+#### GET /v1/images/username/collection/image:tag?arch=arch
 
 The get image view takes unique resource identifier information for a container along with an architecture,
 and determines if the registry has it. 
@@ -1026,7 +1026,7 @@ or if the architecture requested does not match the one that the container has.
 Given that the container is found, this view returns the same 200 success response as the similar
 view pinged to upload a container defined [here](#get-image-view).
 
-#### GET `/v1/imagefile/<username>/<collection>/<image>:<tag>?arch=<arch>`
+#### GET `/v1/imagefile/username/collection/image:tag?arch=arch`
 
 This endpoint is pinged to request the actual download URL for the image.
 The registry is again expected to parse the container unique resource identifier,
