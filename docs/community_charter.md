@@ -39,5 +39,7 @@ and the remaining Approvers all agree.
 
 ## Current list of Approvers
 
-Dave Dykstra, Fermi National Accelerator Laboratory
-Vanessa Sochat, Lawrence Livermore National Laboratory
+```text
+- Dave Dykstra, Fermi National Accelerator Laboratory
+- Vanessa Sochat, Lawrence Livermore National Laboratory
+```
