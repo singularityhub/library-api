@@ -11,33 +11,33 @@ so older implementations can continue to work.
 
 In order to avoid letting the specification be controlled by a single
 individual or company, changes to the specification and to this charter
-are reviewed by a set of people designated as "Approvers".
-There are 3 to 5 Approvers, each from separate organizations.
-Approvers are "members" in the 
-[github repository](https://github.com/singularityhub/singularity-api)
-so they can use github tools to mark pull requests as "Approved" or
-"Changes requested".
+are reviewed by a set of people designated as "Maintainers."
+There are 3 to 5 Maintainers, each from separate organizations.
+Maintainers are "members" in the 
+[github repository](https://github.com/singularityhub/library-api)
+so they can use GitHub tools to mark pull requests as "Approved" or
+"Changes requested."
 Discussions will be public in issues or pull requests in that repository.
-Approvers will "Watch" the github repository for all activity.
-Every effort will be made to achieve a consensus among the Approvers,
+Maintainers will watch the GitHub repository for all activity.
+Every effort will be made to achieve a consensus among the Maintainers,
 but if consensus cannot be reached, changes can still be accepted if a
-majority of the Approvers agree.
+majority of the Maintainers agree.
 
-## Adding Approvers
+## Adding Maintainers
 
-If there are less than the maximum number of Approvers and someone else volunteers,
+If there are less than the maximum number of Maintainers and someone else volunteers,
 as long as the new person is from a different organization,
 a new approver can be added when a majority of the existing Approvers agree.
 
-## Removing Approvers
+## Removing Maintainers
 
-People can be removed from the current list of Approvers if they request to be removed.
+People can be removed from the current list of Maintainers if they request to be removed.
 
-In addition, an Approver can be removed if for some reason the Approver stops
-responding for a period of 2 weeks or more,
-and the remaining Approvers all agree.
+In addition, an Maintainer can be removed if for some reason the Maintainer stops
+responding for a period of 2 months or more,
+and the remaining Maintainers all agree.
 
-## Current list of Approvers
+## Current list of Maintainers
 
 ```text
 - Dave Dykstra, Fermi National Accelerator Laboratory
