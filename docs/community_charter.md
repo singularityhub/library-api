@@ -39,7 +39,5 @@ and the remaining Maintainers all agree.
 
 ## Current list of Maintainers
 
-```text
-- Dave Dykstra, Fermi National Accelerator Laboratory
-- Vanessa Sochat, Lawrence Livermore National Laboratory
-```
+- [@DrDaveD](https://github.com/DrDaveD), Fermi National Accelerator Laboratory
+- [@vsoch](https://github.com/vsoch), Lawrence Livermore National Laboratory
