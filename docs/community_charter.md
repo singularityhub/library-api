@@ -1,7 +1,7 @@
-# Singularityhub Library API Standard Community Charter
+# Container Library API Standard Community Charter
 
-The Singularityhub Library API Standard Community is made up of people who
-are interested in the specification for the Library API.
+The Container Library API Standard Community is made up of people who
+are interested in the specification for the API.
 Standards usually evolve, so this charter describes the process for
 making that happen.
 The community's intention is to evolve the standard in compatible ways
