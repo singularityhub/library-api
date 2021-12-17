@@ -41,4 +41,5 @@ and the remaining Maintainers all agree.
 
 - [@DrDaveD](https://github.com/DrDaveD), Fermi National Accelerator Laboratory
 - [@GodloveD](https://github.com/GodloveD), National Institute of Health
+- [@tri-adam](https://github.com/tri-adam), Sylabs
 - [@vsoch](https://github.com/vsoch), Lawrence Livermore National Laboratory
