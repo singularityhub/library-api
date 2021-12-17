@@ -40,4 +40,5 @@ and the remaining Maintainers all agree.
 ## Current list of Maintainers
 
 - [@DrDaveD](https://github.com/DrDaveD), Fermi National Accelerator Laboratory
+- [@GodloveD](https://github.com/GodloveD), National Institute of Health
 - [@vsoch](https://github.com/vsoch), Lawrence Livermore National Laboratory
