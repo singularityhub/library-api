@@ -1,14 +1,18 @@
 # Library API
 
-This is a specification for the [Library API](https://cloud.sylabs.io/library) that was originally implemented
+This is a specification for the Library API that was originally implemented
 by Sylabs in the [singularity](https://github.com/sylabs/singularity) project,
-and now is present in the following non-commercial container registry implementations:
+and now is present in the following container registry implementations:
 
  - [Singularity Registry Server](https://github.com/singularityhub/sregistry)
  - [Hinkskalle Registry](https://github.com/csf-ngs/hinkskalle)
+ - [Sylabs Cloud Library](https://cloud.sylabs.io/library)
+ - [Singularity Enterprise](https://sylabs.io/singularity-enterprise/)
  
 The specification here is a community effort to document and maintain this application
-programming interface.
+programming interface. To support this effort, Sylabs has contributed the
+[OpenAPI specification](https://github.com/sylabs/scs-library-client/blob/master/api/server/openapi.yml)
+on which their services are based.
 
 ## Who is this intended for?
 
@@ -31,15 +35,19 @@ The following non-commercial implementations of the spec exist:
 
  - [Singularity Registry Server](https://github.com/singularityhub/sregistry) and [documentation for the client interaction](https://singularityhub.github.io/sregistry/docs/client)
  - [Hinkskalle Registry](https://github.com/csf-ngs/hinkskalle)
+ - [Sylabs Cloud Library](https://cloud.sylabs.io/library)
 
 The following commercial implementations exist:
 
- - [Sylabs Cloud Library](https://cloud.sylabs.io/library)
+ - [Singularity Enterprise](https://sylabs.io/singularity-enterprise/)
 
 ### Clients
 
-As the `library://` endpoint was developed for the open source Singularity software,
-the primary clients are the two versions of the original Singularity software:
+An open source Go client is available, which an be used to interact with `library://` endpoints:
+
+- [scs-library-client](https://pkg.go.dev/github.com/sylabs/scs-library-client/client)
+
+The `scs-library-client` module is used in both versions of the original Singularity software:
 
  - [sylabs/singularity](https://github.com/sylabs/singularity) 
  - [apptainer/singularity](https://github.com/apptainer/singularity) 
