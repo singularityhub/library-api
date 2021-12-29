@@ -102,7 +102,7 @@ Each field is explained in detail in the following table:
 | env.name  | string | A name that describes the environment (e.g., prod indicates production) |
 | logging.console | boolean | Should the client provide console logging (note this does not have to be followed by the client |
 | libraryAPI | string | the endpoint for the library API |
-| libraryAPI | string | the endpoint for the keystore API (not required) |
+| keystoreAPI | string | the endpoint for the keystore API (not required) |
 | tokenAPI | string | the base endpoint for the token API (functions included in the library API) |
 | auth.issuer | string | the issuer of the authentication, which can be the same or a different server |
 | auth.requireHttps | boolean | Does the registry require https for interaction? |
